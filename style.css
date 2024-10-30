@@ -63,7 +63,7 @@ section{
 .main h2 span{
     display: inline-block;
     margin-top: 10px;
-    color: darkslateblue;
+    color: #4682B4;
     font-size: 3em;
     font-weight: 500;
 }
@@ -77,6 +77,11 @@ section{
     margin-bottom: 30px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .data-scientist {
+        background: linear-gradient(90deg, #87CEFA, #4682B4); /* lighter blue gradient for contrast */
+    }
+}
 .main-btn{
     text-decoration: none;
     color: whitesmoke;
@@ -291,4 +296,54 @@ section{
         font-size: 10px;
      
     }
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h4 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: #0072b1; /* Customize category heading color */
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-category li {
+    font-size: 1em;
+    padding: 5px 12px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.certifications-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0072b1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.certifications-link:hover {
+    background-color: #005582;
 }
